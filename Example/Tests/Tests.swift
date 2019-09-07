@@ -2,48 +2,40 @@
 
 import Quick
 import Nimble
+import Eureka
 import EurekaFormBuilder
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
-        describe("these will fail") {
-
-            it("can do maths") {
-                expect(1) == 2
+        describe("form") {
+            it("contains one row") {
+                let form = Form()
+                form.append { Section() }
+                expect(form.allSections.count) == 1
             }
 
-            it("can read") {
-                expect("number") == "string"
+            it("contains two row") {
+                let form = Form()
+                form.append {
+                    Section()
+                    Section()
+                }
+                expect(form.allSections.count) == 2
+            }
+        }
+        
+        describe("section") {
+            it("contains one row") {
+                expect(Section {
+                    BaseRow()
+                }.allRows.count) == 1
             }
 
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
-            }
-            
-            context("these will pass") {
-
-                it("can do maths") {
-                    expect(23) == 23
-                }
-
-                it("can read") {
-                    expect("🐮") == "🐮"
-                }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    DispatchQueue.main.async {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        Thread.sleep(forTimeInterval: 0.5)
-                        expect(time) == "done"
-
-                        done()
-                    }
-                }
+            it("contains two row") {
+                expect(Section {
+                    BaseRow()
+                    BaseRow()
+                }.allRows.count) == 2
             }
         }
     }
