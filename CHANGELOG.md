@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## UNRELEASED
+## 0.1.1
 
 - Docs: Add source to code in Usage section of README.
 - Docs: Create CHANGELOG (This!)
