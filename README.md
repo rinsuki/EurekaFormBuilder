@@ -24,6 +24,9 @@ pod 'EurekaFormBuilder'
 
 ## Usage
 
+This is rewrited [Eureka's README demo code](https://github.com/xmartlabs/Eureka#how-to-create-a-form) with EurekaFormBuilder.
+
+
 ```swift
 import Eureka
 import EurekaFormBuilder
