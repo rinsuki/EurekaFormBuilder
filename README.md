@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+- Xcode 11+ (tested with Xcode 11 beta 7 `(11M392r)`)
+
 ## Installation
 
 EurekaFormBuilder is available through [CocoaPods](https://cocoapods.org). To install
@@ -20,9 +22,40 @@ it, simply add the following line to your Podfile:
 pod 'EurekaFormBuilder'
 ```
 
+## Usage
+
+```swift
+import Eureka
+import EurekaFormBuilder
+
+class MyFormViewController: FormViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        form.append {
+            Section(header: "Section1") {
+                TextRow { row in
+                    row.title = "Text Row"
+                    row.placeholder = "Enter text here"
+                }
+                PhoneRow {
+                    $0.title = "Phone Row"
+                    $0.placeholder = "And numbers here"
+                }
+            }
+            Section(header: "Section2") {
+                DateRow {
+                    $0.title = "Date Row"
+                    $0.value = Date(timeIntervalSinceReferenceDate: 0)
+                }
+            }
+        }
+    }
+}
+```
+
 ## Author
 
-rinsuki, 428rinsuki+git@gmail.com
+@rinsuki
 
 ## License
 

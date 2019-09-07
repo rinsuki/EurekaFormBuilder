@@ -6,19 +6,30 @@
 //  Copyright (c) 2019 rinsuki. All rights reserved.
 //
 
-import UIKit
+import Eureka
+import EurekaFormBuilder
 
-class ViewController: UIViewController {
+class ViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        form.append {
+            Section {
+                TextRow { row in
+                    row.title = "Example"
+                    row.placeholder = "placeholder"
+                }
+            }
+            Section(header: "This is header", footer: "This is footer") {
+                ButtonRow { row in
+                    row.title = "Button"
+                }
+                ButtonRow { row in
+                    row.title = "Button2"
+                }
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
