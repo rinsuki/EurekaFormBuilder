@@ -8,11 +8,24 @@
 import Eureka
 
 extension Form {
-    public func append(@EurekaSectionBuilder child: () -> Section) {
+    public func append(@EurekaBuilder _ child: () -> Section) {
         self.append(child())
     }
     
-    public func append(@EurekaSectionBuilder child: () -> Array<Section>) {
+    public func append(@EurekaBuilder _ child: () -> Array<Section>) {
         self.append(contentsOf: child())
+    }
+}
+
+func demo() {
+    let form = Form()
+    form.append {
+        Section() {
+            TextRow()
+        }
+        Section() {
+            ButtonRow()
+            TextRow()
+        }
     }
 }

@@ -8,6 +8,7 @@
 
 import Eureka
 import EurekaFormBuilder
+import SwiftUI
 
 class ViewController: FormViewController {
 

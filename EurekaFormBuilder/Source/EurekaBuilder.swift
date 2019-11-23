@@ -7,8 +7,11 @@
 
 import Eureka
 
-@_functionBuilder public struct EurekaRowBuilder {
+@_functionBuilder public struct EurekaBuilder {
     static public func buildBlock(_ contents: BaseRow...) -> Array<BaseRow> {
+        return contents
+    }
+    static public func buildBlock(_ contents: Section...) -> Array<Section> {
         return contents
     }
 }

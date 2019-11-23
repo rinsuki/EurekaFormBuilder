@@ -32,10 +32,11 @@ class TableOfContentsSpec: QuickSpec {
             }
 
             it("contains two row") {
-                expect(Section {
+                let section = Section {
                     BaseRow()
                     BaseRow()
-                }.allRows.count) == 2
+                }
+                expect(section.allRows.count) == 2
             }
         }
     }

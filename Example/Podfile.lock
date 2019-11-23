@@ -1,6 +1,6 @@
 PODS:
   - Eureka (5.0.0)
-  - EurekaFormBuilder (0.1.0):
+  - EurekaFormBuilder (0.1.1):
     - Eureka (~> 5.0)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
@@ -23,7 +23,7 @@ DEPENDENCIES:
   - Quick (~> 1.2.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://cdn.cocoapods.org/:
     - Eureka
     - FBSnapshotTestCase
     - Nimble
@@ -36,7 +36,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Eureka: 0f64f477ec8ef6201c6fec143d60ff5c201cf654
-  EurekaFormBuilder: 36e3b72b9b29431ca2760d92b86437c7378b3831
+  EurekaFormBuilder: 242951fae0d49113ad76c645d8ca5ac8c3514ee6
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
@@ -44,4 +44,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 184238ec1a6bccc7e991d32fc56bfc70bf02f9d4
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4
