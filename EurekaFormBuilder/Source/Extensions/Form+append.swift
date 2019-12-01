@@ -21,7 +21,11 @@ func demo() {
     let form = Form()
     form.append {
         Section() {
-            TextRow()
+            TextRow() // without tag
+            TextRow("hoge") // with tag
+            TextRow("hoge") { row in // with tag and initializer
+                row.placeholder = "hoge"
+            }
         }
         Section() {
             ButtonRow()
