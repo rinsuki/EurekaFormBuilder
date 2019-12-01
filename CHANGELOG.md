@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.2.1
+
+- Fix: Failing to build on Xcode 11.2 or later when using `TextRow("tag")` syntax
+
 ## 0.2.0
 
 - Fix: Build on Xcode 11.2 or later

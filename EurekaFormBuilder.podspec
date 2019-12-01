@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EurekaFormBuilder'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'Eureka + _functionBuilder = LGTM'
 
   s.homepage         = 'https://github.com/rinsuki/EurekaFormBuilder'

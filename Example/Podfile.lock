@@ -1,6 +1,6 @@
 PODS:
   - Eureka (5.0.0)
-  - EurekaFormBuilder (0.2.0):
+  - EurekaFormBuilder (0.2.1):
     - Eureka (~> 5.0)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
@@ -36,7 +36,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Eureka: 0f64f477ec8ef6201c6fec143d60ff5c201cf654
-  EurekaFormBuilder: f34ff96197bad3e2e980f27886f061b1f100001b
+  EurekaFormBuilder: 0fbb81858c0a83c5de85b88733b44cf3d4008706
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
