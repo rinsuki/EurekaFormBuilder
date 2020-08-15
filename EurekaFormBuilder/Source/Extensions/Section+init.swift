@@ -9,7 +9,8 @@ import Eureka
 
 extension Section {
     public convenience init(header: String? = nil, footer: String? = nil, @EurekaBuilder child: () -> BaseRow) {
-        self.init(header: header, footer: footer) { [child()] }
+        self.init(header: header, footer: footer)
+        append(child())
     }
     
     public convenience init(header: String? = nil, footer: String? = nil, @EurekaBuilder child: () -> Array<BaseRow>) {
