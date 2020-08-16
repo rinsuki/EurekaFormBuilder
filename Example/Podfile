@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'EurekaFormBuilder_Example' do
   pod 'EurekaFormBuilder', :path => '../'
+  pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'xcode12'
 
   target 'EurekaFormBuilder_Tests' do
     inherit! :search_paths

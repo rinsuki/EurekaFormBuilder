@@ -1,6 +1,6 @@
 PODS:
-  - Eureka (5.0.0)
-  - EurekaFormBuilder (0.2.1):
+  - Eureka (5.2.1)
+  - EurekaFormBuilder (0.2.2):
     - Eureka (~> 5.0)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
@@ -16,6 +16,7 @@ PODS:
   - Quick (1.2.0)
 
 DEPENDENCIES:
+  - Eureka (from `https://github.com/xmartlabs/Eureka.git`, branch `xcode12`)
   - EurekaFormBuilder (from `../`)
   - FBSnapshotTestCase (~> 2.1.4)
   - Nimble (~> 7.0)
@@ -23,25 +24,32 @@ DEPENDENCIES:
   - Quick (~> 1.2.0)
 
 SPEC REPOS:
-  https://cdn.cocoapods.org/:
-    - Eureka
+  trunk:
     - FBSnapshotTestCase
     - Nimble
     - Nimble-Snapshots
     - Quick
 
 EXTERNAL SOURCES:
+  Eureka:
+    :branch: xcode12
+    :git: https://github.com/xmartlabs/Eureka.git
   EurekaFormBuilder:
     :path: "../"
 
+CHECKOUT OPTIONS:
+  Eureka:
+    :commit: f5651e328e099393e51b63f1abe78153cbacf90f
+    :git: https://github.com/xmartlabs/Eureka.git
+
 SPEC CHECKSUMS:
-  Eureka: 0f64f477ec8ef6201c6fec143d60ff5c201cf654
-  EurekaFormBuilder: 0fbb81858c0a83c5de85b88733b44cf3d4008706
+  Eureka: c883105488e05bc65539f583246ecf9657cabbfe
+  EurekaFormBuilder: c5998a2b11bb9c4391f1b9f6c230952f08ab210b
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
-PODFILE CHECKSUM: 184238ec1a6bccc7e991d32fc56bfc70bf02f9d4
+PODFILE CHECKSUM: f6e44c8f841976cc4db6d44e956eb136ec15a857
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
